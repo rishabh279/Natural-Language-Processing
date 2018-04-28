@@ -13,12 +13,12 @@ from sklearn.linear_model import LogisticRegression
 from bs4 import BeautifulSoup#use to read xml file as reviews are in xml
 
 wordnet_lemmatizer = WordNetLemmatizer()#used to convert words into base form like dogs to dog, liked to like
-stopwords=set(w.rstrip() for w in open('E:/RS/ML/Machine learning tuts/Target/Part4(NLP)/Code/NlP-1/stopwords.txt'))
+stopwords=set(w.rstrip() for w in open(''))
 
-positive_reviews=BeautifulSoup(open('E:/RS/ML/Machine learning tuts/Target/Part4(NLP)/Code/electronics/positive.review').read(),"lxml")
+positive_reviews=BeautifulSoup(open('').read(),"lxml")
 positive_reviews=positive_reviews.findAll('review_text')
 
-negative_reviews=BeautifulSoup(open('E:/RS/ML/Machine learning tuts/Target/Part4(NLP)/Code/electronics/negative.review').read(),"lxml")
+negative_reviews=BeautifulSoup(open('').read(),"lxml")
 negative_reviews=negative_reviews.findAll('review_text')
 
 np.random.shuffle(positive_reviews)

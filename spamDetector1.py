@@ -9,7 +9,7 @@ from sklearn.naive_bayes import MultinomialNB
 import pandas as pd 
 import numpy as np
 
-data = pd.read_csv('E:/RS/ML/Machine learning tuts/Target/Part4(NLP)/NlP-1/spambase.data').as_matrix()
+data = pd.read_csv('').as_matrix()
 np.random.shuffle(data)
 
 X=data[:,:48]

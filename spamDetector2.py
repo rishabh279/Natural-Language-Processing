@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 import wordcloud as w
 
-df=pd.read_csv('E:/RS/ML/Machine learning tuts/Target/Part4(NLP)/NlP-1/spam.csv', encoding='ISO-8859-1')
+df=pd.read_csv('', encoding='ISO-8859-1')
 
 df = df.drop(["Unnamed: 2","Unnamed: 3","Unnamed: 4"],axis=1)
 
